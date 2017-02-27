@@ -124,3 +124,14 @@ $.getJSON(twitter_url, function(data) {
 		$('<li>' + txt + '</li>').appendTo('ul.tweets');
 	});
 });
+
+//--------------------------//
+
+// Prevent Scrolling (antiscroll)
+
+ $(document).on("touchmove",function(event){
+	event.preventDefault();
+});
+$(document).on("scroll",function(event) {
+	event.preventDefault();
+}
