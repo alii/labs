@@ -135,3 +135,12 @@ $.getJSON(twitter_url, function(data) {
 $(document).on("scroll",function(event) {
 	event.preventDefault();
 }
+
+//--------------------------//
+	       
+//device detection
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	// Do something
+} else {
+	// Do something else
+}
